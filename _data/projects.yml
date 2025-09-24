@@ -1,0 +1,87 @@
+- title: "Real-time Data Analytics Pipeline on AWS"
+  description: "Built a comprehensive real-time data analytics pipeline using AWS services including Kinesis Data Streams, Lambda functions, and Redshift for processing and analyzing streaming data from multiple sources."
+  status: "Featured Project"
+  status_class: "featured"
+  technologies:
+    - name: "AWS Kinesis"
+      aws: true
+    - name: "AWS Lambda"
+      aws: true
+    - name: "Amazon Redshift"
+      aws: true
+    - name: "AWS Glue"
+      aws: true
+    - name: "Python"
+    - name: "SQL"
+  achievement: "Achieved 99.9% uptime with sub-second latency for real-time analytics processing"
+  github_url: "https://github.com/moeinghaeini/aws-realtime-analytics"
+
+- title: "YouTube Analytics ETL Pipeline with AWS"
+  description: "Developed a comprehensive ETL pipeline for YouTube channel analytics using AWS services. Implemented automated data acquisition, processing, and visualization with Docker containerization and cloud deployment."
+  status: "Production Ready"
+  status_class: "production"
+  technologies:
+    - name: "AWS S3"
+      aws: true
+    - name: "AWS Lambda"
+      aws: true
+    - name: "Amazon RDS"
+      aws: true
+    - name: "Docker"
+    - name: "PostgreSQL"
+    - name: "Streamlit"
+    - name: "Plotly"
+  achievement: "Delivered end-to-end data pipeline with real-time analytics dashboard and automated engagement scoring"
+  github_url: "https://github.com/moeinghaeini/YouTube-Video-Analytics-Pipeline"
+
+- title: "Machine Learning Pipeline on AWS SageMaker"
+  description: "Implemented an automated machine learning pipeline for tabular data using AWS SageMaker, including data preprocessing, model training, and deployment with automated hyperparameter optimization."
+  status: "ML/AI Focus"
+  status_class: "ml"
+  technologies:
+    - name: "AWS SageMaker"
+      aws: true
+    - name: "AWS S3"
+      aws: true
+    - name: "Python"
+    - name: "Scikit-learn"
+    - name: "Pandas"
+    - name: "Optuna"
+  achievement: "Achieved 15% improvement in predictive accuracy with automated model selection and optimization"
+  github_url: "https://github.com/moeinghaeini/Automated-Machine-learning-for-Tabular-data"
+
+- title: "Data Lake Architecture on AWS"
+  description: "Designed and implemented a scalable data lake architecture using AWS services including S3, Glue, Athena, and QuickSight for data ingestion, processing, and visualization."
+  status: "Architecture"
+  status_class: "architecture"
+  technologies:
+    - name: "AWS S3"
+      aws: true
+    - name: "AWS Glue"
+      aws: true
+    - name: "Amazon Athena"
+      aws: true
+    - name: "AWS QuickSight"
+      aws: true
+    - name: "CloudFormation"
+    - name: "Python"
+  achievement: "Reduced data processing time by 70% and improved query performance by 85%"
+  github_url: "https://github.com/moeinghaeini/aws-data-lake"
+
+- title: "Serverless Data Processing with AWS Lambda"
+  description: "Built a serverless data processing system using AWS Lambda, S3, and DynamoDB for real-time data transformation and storage with automatic scaling and cost optimization."
+  status: "Serverless"
+  status_class: "serverless"
+  technologies:
+    - name: "AWS Lambda"
+      aws: true
+    - name: "AWS S3"
+      aws: true
+    - name: "DynamoDB"
+      aws: true
+    - name: "API Gateway"
+      aws: true
+    - name: "Python"
+    - name: "Boto3"
+  achievement: "Achieved 90% cost reduction compared to traditional EC2-based processing"
+  github_url: "https://github.com/moeinghaeini/serverless-data-processing"

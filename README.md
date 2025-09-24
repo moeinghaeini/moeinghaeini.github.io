@@ -69,9 +69,68 @@ This website represents my journey as a Cloud Data Engineer and AWS Solutions Ar
 - **GitHub**: [github.com/moeinghaeini](https://github.com/moeinghaeini)
 - **Location**: Milan, Italy
 
-## 🚀 Deployment
+## 🚀 Jekyll Setup & Deployment
 
-This website is designed to be deployed on GitHub Pages or any static web hosting service. Simply upload the files to your hosting provider and the website will be live.
+This website is built with Jekyll, a static site generator that's perfect for GitHub Pages deployment.
+
+### Local Development
+
+1. **Install Dependencies**:
+   ```bash
+   # Run the setup script
+   ./setup-jekyll.sh
+   
+   # Or manually install
+   bundle install
+   ```
+
+2. **Start Development Server**:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+3. **View Website**: Open [http://localhost:4000](http://localhost:4000) in your browser
+
+### Jekyll Structure
+
+```
+├── _config.yml          # Jekyll configuration
+├── _layouts/            # Page layouts
+│   ├── default.html    # Main layout
+│   ├── post.html       # Blog post layout
+│   └── project.html    # Project layout
+├── _pages/             # Static pages
+├── _projects/          # Project markdown files
+├── _blog/              # Blog post markdown files
+├── _data/              # Data files (YAML/JSON)
+├── _includes/          # Reusable components
+├── index.html          # Home page
+├── style.css           # Main stylesheet
+└── Gemfile             # Ruby dependencies
+```
+
+### GitHub Pages Deployment
+
+1. **Push to GitHub**: Commit and push your changes
+2. **Enable GitHub Pages**: Go to repository settings → Pages
+3. **Select Source**: Choose "Deploy from a branch" → "main"
+4. **Automatic Deployment**: GitHub will build and deploy your site
+
+### Content Management
+
+- **Pages**: Edit files in `_pages/` directory
+- **Projects**: Add new projects in `_projects/` directory
+- **Blog Posts**: Add new posts in `_blog/` directory
+- **Data**: Update `_data/projects.yml` for project data
+
+### Jekyll Features
+
+- **Collections**: Organized content structure
+- **Layouts**: Consistent page templates
+- **Data Files**: Centralized data management
+- **SEO**: Built-in SEO optimization
+- **RSS Feed**: Automatic feed generation
+- **Sitemap**: Automatic sitemap generation
 
 ---
 

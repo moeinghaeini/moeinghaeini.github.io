@@ -1,0 +1,93 @@
+# Site settings
+title: "Moein Ghaeini - Cloud Data Engineer & AWS Solutions Architect"
+description: "Cloud Data Engineer & AWS Solutions Architect specializing in data pipelines, analytics, and cloud infrastructure solutions."
+author: "Moein Ghaeini"
+email: "moein.ghaeinihesarooeyeh@studenti.unimi.it"
+url: "https://moeinghaeini.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: Europe/Rome
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+  certifications:
+    output: true
+    permalink: /:collection/:name/
+  blog:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "certifications"
+    values:
+      layout: "certification"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/
+
+# Include in processing
+include:
+  - _pages
+
+# Social links
+social:
+  - name: LinkedIn
+    url: https://linkedin.com/in/moeinghaeini
+    icon: fab fa-linkedin
+  - name: GitHub
+    url: https://github.com/moeinghaeini
+    icon: fab fa-github
+  - name: Email
+    url: mailto:moein.ghaeinihesarooeyeh@studenti.unimi.it
+    icon: fas fa-envelope
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Certifications
+    url: /certifications/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
