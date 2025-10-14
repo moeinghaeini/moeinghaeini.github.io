@@ -1,179 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Moein Ghaeini | Cloud Data Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="1722681964396.jpeg" alt="Moein Ghaeini - Cloud Data Engineer">
+---
+layout: default
+title: Blog
+---
+
+<div class="container">
+    <header class="header">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="/assets/images/profile.jpg" alt="{{ site.author }} - {{ site.title }}">
+            </div>
+            <div class="profile-info">
+                <h1>{{ site.author }}</h1>
+                <p class="title">Your Professional Title</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Your Location</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>{{ site.email }}</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>Your Phone Number</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/yourusername</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <span>github.com/yourusername</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/projects/" class="nav-link">Projects</a>
+        <a href="/certifications/" class="nav-link">Certifications</a>
+        <a href="/blog/" class="nav-link active">Blog</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="section">
+            <h2><i class="fas fa-blog"></i> Blog</h2>
+            <p>Welcome to my blog where I share insights, experiences, and knowledge about my field. Here you'll find articles about my projects, learning journey, and best practices.</p>
+        </section>
+
+        <section class="section">
+            <div class="blog-post">
+                <h3>Sample Blog Post Title</h3>
+                <div class="post-meta">
+                    <span><i class="fas fa-calendar"></i> Date</span>
+                    <span><i class="fas fa-tag"></i> Category</span>
+                    <span><i class="fas fa-clock"></i> X min read</span>
                 </div>
-                <div class="profile-info">
-                    <h1>Moein Ghaeini</h1>
-                    <p class="title">Cloud Data Engineer & AWS Solutions Architect</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Milan, Italy</p>
+                <p>Brief description of your blog post. This is where you introduce the topic and give readers a preview of what they'll learn.</p>
+                <div class="post-tags">
+                    <span class="tag">Tag 1</span>
+                    <span class="tag">Tag 2</span>
+                    <span class="tag">Tag 3</span>
+                    <span class="tag">Tag 4</span>
+                </div>
+                <a href="#" class="read-more">Read Full Article</a>
+            </div>
+
+            <div class="blog-post">
+                <h3>Another Blog Post Title</h3>
+                <div class="post-meta">
+                    <span><i class="fas fa-calendar"></i> Date</span>
+                    <span><i class="fas fa-tag"></i> Category</span>
+                    <span><i class="fas fa-clock"></i> X min read</span>
+                </div>
+                <p>Brief description of your second blog post. Explain what readers will learn and why it's valuable.</p>
+                <div class="post-tags">
+                    <span class="tag">Tag 1</span>
+                    <span class="tag">Tag 2</span>
+                    <span class="tag">Tag 3</span>
+                    <span class="tag">Tag 4</span>
+                </div>
+                <a href="#" class="read-more">Read Full Article</a>
+            </div>
+
+            <div class="blog-post">
+                <h3>Third Blog Post Title</h3>
+                <div class="post-meta">
+                    <span><i class="fas fa-calendar"></i> Date</span>
+                    <span><i class="fas fa-tag"></i> Category</span>
+                    <span><i class="fas fa-clock"></i> X min read</span>
+                </div>
+                <p>Brief description of your third blog post. Keep it engaging and informative to encourage readers to click through.</p>
+                <div class="post-tags">
+                    <span class="tag">Tag 1</span>
+                    <span class="tag">Tag 2</span>
+                    <span class="tag">Tag 3</span>
+                    <span class="tag">Tag 4</span>
+                </div>
+                <a href="#" class="read-more">Read Full Article</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-rss"></i> Coming Soon</h2>
+            <div class="upcoming-posts">
+                <div class="upcoming-item">
+                    <h3>Upcoming Post Title 1</h3>
+                    <p>Brief description of the upcoming blog post you're planning to write.</p>
+                </div>
+                
+                <div class="upcoming-item">
+                    <h3>Upcoming Post Title 2</h3>
+                    <p>Brief description of another upcoming blog post you're planning to write.</p>
+                </div>
+                
+                <div class="upcoming-item">
+                    <h3>Upcoming Post Title 3</h3>
+                    <p>Brief description of a third upcoming blog post you're planning to write.</p>
                 </div>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>moein.ghaeinihesarooeyeh@studenti.unimi.it</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+39 351 6600 886</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>linkedin.com/in/moeinghaeini</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>github.com/moeinghaeini</span>
-                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. {{ site.title }}.</p>
+            <div class="social-links">
+                {% for social in site.social %}
+                <a href="{{ social.url }}" target="_blank"><i class="{{ social.icon }}"></i></a>
+                {% endfor %}
             </div>
-        </header>
-
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="projects.html" class="nav-link">Cloud Projects</a>
-            <a href="certifications.html" class="nav-link">Certifications</a>
-            <a href="blog.html" class="nav-link active">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-
-        <main class="main-content">
-            <section class="section">
-                <h2><i class="fas fa-blog"></i> Cloud Data Engineering Blog</h2>
-                <p>Welcome to my blog where I share insights, experiences, and knowledge about cloud data engineering, AWS services, and data architecture. Here you'll find articles about my projects, learning journey, and best practices in the field.</p>
-            </section>
-
-            <section class="section">
-                <div class="blog-post">
-                    <h3>Building Real-time Data Pipelines with AWS Kinesis</h3>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> December 15, 2024</span>
-                        <span><i class="fas fa-tag"></i> AWS, Data Engineering</span>
-                        <span><i class="fas fa-clock"></i> 5 min read</span>
-                    </div>
-                    <p>Learn how to design and implement real-time data processing pipelines using AWS Kinesis Data Streams, Lambda functions, and Amazon Redshift. This comprehensive guide covers best practices for handling streaming data at scale.</p>
-                    <div class="post-tags">
-                        <span class="tag">AWS Kinesis</span>
-                        <span class="tag">Lambda</span>
-                        <span class="tag">Real-time Processing</span>
-                        <span class="tag">Data Pipelines</span>
-                    </div>
-                    <a href="#" class="read-more">Read Full Article</a>
-                </div>
-
-                <div class="blog-post">
-                    <h3>Data Lake Architecture on AWS: Best Practices</h3>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> December 10, 2024</span>
-                        <span><i class="fas fa-tag"></i> AWS, Data Architecture</span>
-                        <span><i class="fas fa-clock"></i> 7 min read</span>
-                    </div>
-                    <p>Explore the fundamentals of building scalable data lake architectures on AWS using S3, Glue, Athena, and QuickSight. Discover how to optimize costs while maintaining performance and security.</p>
-                    <div class="post-tags">
-                        <span class="tag">Data Lake</span>
-                        <span class="tag">AWS S3</span>
-                        <span class="tag">AWS Glue</span>
-                        <span class="tag">Architecture</span>
-                    </div>
-                    <a href="#" class="read-more">Read Full Article</a>
-                </div>
-
-                <div class="blog-post">
-                    <h3>Machine Learning Pipeline with AWS SageMaker</h3>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> December 5, 2024</span>
-                        <span><i class="fas fa-tag"></i> AWS, Machine Learning</span>
-                        <span><i class="fas fa-clock"></i> 6 min read</span>
-                    </div>
-                    <p>Step-by-step guide to building automated machine learning pipelines using AWS SageMaker. From data preprocessing to model deployment, learn how to streamline your ML workflows in the cloud.</p>
-                    <div class="post-tags">
-                        <span class="tag">SageMaker</span>
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">MLOps</span>
-                        <span class="tag">Automation</span>
-                    </div>
-                    <a href="#" class="read-more">Read Full Article</a>
-                </div>
-
-                <div class="blog-post">
-                    <h3>Serverless Data Processing: Cost Optimization Strategies</h3>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> November 28, 2024</span>
-                        <span><i class="fas fa-tag"></i> AWS, Serverless, Cost Optimization</span>
-                        <span><i class="fas fa-clock"></i> 4 min read</span>
-                    </div>
-                    <p>Discover how to optimize costs when building serverless data processing solutions with AWS Lambda, S3, and DynamoDB. Learn practical strategies for reducing cloud expenses while maintaining performance.</p>
-                    <div class="post-tags">
-                        <span class="tag">Serverless</span>
-                        <span class="tag">Cost Optimization</span>
-                        <span class="tag">Lambda</span>
-                        <span class="tag">Best Practices</span>
-                    </div>
-                    <a href="#" class="read-more">Read Full Article</a>
-                </div>
-
-                <div class="blog-post">
-                    <h3>My Journey: From Web Development to Cloud Data Engineering</h3>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> November 20, 2024</span>
-                        <span><i class="fas fa-tag"></i> Career, Learning</span>
-                        <span><i class="fas fa-clock"></i> 8 min read</span>
-                    </div>
-                    <p>Reflecting on my transition from web development to cloud data engineering. Learn about the skills I developed, challenges I faced, and how AWS certifications helped shape my career path.</p>
-                    <div class="post-tags">
-                        <span class="tag">Career Journey</span>
-                        <span class="tag">Learning</span>
-                        <span class="tag">AWS Certifications</span>
-                        <span class="tag">Data Engineering</span>
-                    </div>
-                    <a href="#" class="read-more">Read Full Article</a>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2><i class="fas fa-rss"></i> Coming Soon</h2>
-                <div class="upcoming-posts">
-                    <div class="upcoming-item">
-                        <h3>ETL vs ELT: Choosing the Right Data Processing Pattern</h3>
-                        <p>An in-depth comparison of ETL and ELT approaches for modern data architectures, with practical examples using AWS services.</p>
-                    </div>
-                    
-                    <div class="upcoming-item">
-                        <h3>Building Data Quality Monitoring with AWS</h3>
-                        <p>Learn how to implement comprehensive data quality monitoring and alerting systems using AWS services and custom solutions.</p>
-                    </div>
-                    
-                    <div class="upcoming-item">
-                        <h3>International Experience in Tech: Lessons from Europe</h3>
-                        <p>Sharing insights from studying and working across different European countries, and how it shaped my approach to technology and collaboration.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Moein Ghaeini. Cloud Data Engineer & AWS Solutions Architect.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/moeinghaeini" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/moeinghaeini" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:moein.ghaeinihesarooeyeh@studenti.unimi.it"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+        </div>
+    </footer>
+</div>

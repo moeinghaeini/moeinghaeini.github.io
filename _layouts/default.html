@@ -1,83 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Cloud Data Engineer, AWS, Solutions Architect, Data Engineering, Cloud Computing, Analytics{% endif %}">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- SEO -->
-    {% seo %}
-    
-    <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-</head>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="{{ '/1722681964396.jpeg' | relative_url }}" alt="{{ site.author }} - Cloud Data Engineer">
-                </div>
-                <div class="profile-info">
-                    <h1>{{ site.author }}</h1>
-                    <p class="title">Cloud Data Engineer & AWS Solutions Architect</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Milan, Italy</p>
-                    {% if page.show_badges != false %}
-                    <div class="aws-badges">
-                        <span class="aws-badge">AWS Certified Data Engineer</span>
-                        <span class="aws-badge">AWS Cloud Practitioner</span>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>{{ site.email }}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+39 351 6600 886</span>
-                </div>
-                {% for social in site.social %}
-                <div class="contact-item">
-                    <i class="{{ social.icon }}"></i>
-                    <span>{{ social.name }}</span>
-                </div>
-                {% endfor %}
-            </div>
-        </header>
+---
+layout: compress
+---
 
-        <!-- Navigation -->
-        <nav class="main-nav">
-            {% for nav in site.navigation %}
-            <a href="{{ nav.url | relative_url }}" class="nav-link{% if page.url == nav.url %} active{% endif %}">{{ nav.title }}</a>
-            {% endfor %}
-        </nav>
+{% include base_path %}
 
-        <!-- Main Content -->
-        <main class="main-content">
-            {{ content }}
-        </main>
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Cloud Data Engineer & AWS Solutions Architect.</p>
-                <div class="social-links">
-                    {% for social in site.social %}
-                    <a href="{{ social.url }}" target="_blank"><i class="{{ social.icon }}"></i></a>
-                    {% endfor %}
-                </div>
-            </div>
-        </footer>
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
-</body>
+
+    {% include scripts.html %}
+
+  </body>
 </html>

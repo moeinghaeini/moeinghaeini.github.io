@@ -2,6 +2,9 @@
 
 echo "🚀 Setting up Jekyll for Cloud Data Engineer Portfolio"
 echo "=================================================="
+echo "📅 Updated: $(date)"
+echo "🔧 Jekyll 4.4.1 with latest plugins"
+echo ""
 
 # Check if Ruby is installed
 if ! command -v ruby &> /dev/null; then
